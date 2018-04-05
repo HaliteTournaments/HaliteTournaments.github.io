@@ -1,69 +1,113 @@
-@font-face{
-  font-family: Track;
-  src: url(fonts/Track.ttf);
-  font-weight: bold;
+/*
+h1 {
+    color: white;
+    font-family: Track;
+    font-size: 3em;
+}
+
+h2 {
+    color: white;
+    font-family: Track;
+    font-size: 2em;
+}
+
+.logo {
+    width: 10em;
+}*/
+
+@font-face {
+    font-family: Track;
+    src: url(fonts/Track.ttf);
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: Equinox;
-  src: url(fonts/EquinoxBold.ttf);
+    font-family: Equinox;
+    src: url(fonts/EquinoxBold.ttf);
 }
 
-html{
-  animation-name:page;
-  -webkit-animation-name:page;
-  -moz-animation-name:page;
-  animation-duration:2.0s;
-  -webkit-animation-duration:2.0s;
-  -moz-animation-duration:2.0s
+html {
+    animation-name: page;
+    -webkit-animation-name: page;
+    -moz-animation-name: page;
+    animation-duration: 2.0s;
+    -webkit-animation-duration: 2.0s;
+    -moz-animation-duration: 2.0s
 }
 
-body{
-  background-color: #424242;
-  background-image: url(images/back.jpg);
-  margin:0;
-  padding:0;
+h1 {
+    color: white;
+    font-family: Track;
+    font-size: 3em;
 }
 
-h1{
-  color: white;
-  font-family: Track;
-  font-size: 3em;
+h2 {
+    color: white;
+    font-family: Track;
+    font-size: 1em;
 }
 
-p{
-  font-family: Equinox;
+.content {
+    width: 80%;
+    background-color: white;
+    padding-bottom: 10%;
 }
 
-a {
-  color: inherit;
+body {
+    background-color: #424242;
+    background-image: url(images/back.jpg);
+    margin: 0;
+    padding: 0;
 }
 
-.logo{
-  width: 20%;
+.sub {
+    color: black;
+    font-size: 2em;
+    font-family: Equinox;
+}
+
+header {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.planet {
+    width: 80%;
+    height: auto;
+}
+
+.map{
+  width: 100%;
   height: auto;
-  padding-top: 5%;
 }
 
-.join{
-  padding-top: 3%;
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.discord{
-  width: 10%;
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3px;
+}
+
+.winner {
+  width: 50%;
   height: auto;
 }
 
-.disc{
-  font-size: 1em;
-  color: white;
-  font-family: Track;
-}
-
-.content{
-  width: 80%;
-  background-color: white;
-  padding-bottom: 10%;
+.newsletter{
+  background: url(images/back.jpg);
+  width: 60%;
 }
 
 .changes{
@@ -74,102 +118,4 @@ a {
   background: url(images/back.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.halite{
-  width: 40%;
-  height: auto;
-}
-
-.sub{
-  color: black;
-  font-size: 2em;
-  font-family: Equinox;
-  background: url(images/back.jpg) no-repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.planet{
-  width: 80%;
-  height: auto;
-}
-
-.map{
-  width: 100%;
-  height: auto;
-}
-
-.planet2{
-  width: 80%;
-  height: auto;
-}
-
-.ships{
-  width: 80%;
-  height: auto;
-}
-
-.explosion{
-  padding-top: 15%;
-  width: 80%;
-  height: auto;
-}
-
-.winner{
-  width: 50%;
-  height: auto;
-
-}
-
-.level{
-  padding-top: 5%;
-  padding-right: 2%;
-  width: 10%;
-  height: auto;
-}
-
-.emoji {
-	font-size:400%;
-
-	-webkit-transform:translateY(-50%);
-	transform:translateY(-50%);
-}
-
-.cert{
-  width: 100%;
-}
-
-.banner{
-  width: 20%;
-}
-
-.newsletter{
-  background: url(images/back.jpg);
-  width: 60%;
-}
-
-.bottom{
-  padding-bottom: 10%;
-}
-
-.bottom p, .bottom h5{
-  color: white;
-  font-family: Track;
-}
-
-@keyframes page{
-  from{
-    opacity:0
-  }to{
-    opacity:1.0
-  }
-}
-
-@-webkit-keyframes page{
-  from{
-    opacity:0
-  }to{
-    opacity:1.0
-  }
 }
